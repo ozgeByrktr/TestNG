@@ -28,7 +28,5 @@ public class AmazonPage {
     public WebElement aramaKutusu;
     @FindBy(xpath = "(//div[@class='sg-col-inner'])[1]")
     public WebElement aramaSonucuElementi;
+
 }
-/*
-https://github.com/ozgeByrktr/TestNG.git
- */

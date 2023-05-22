@@ -1,5 +1,6 @@
 package tests.day15_POM;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.qualitydemyPage;
@@ -10,11 +11,11 @@ public class C02_QualitydemyLoginTesti {
     //qdGecerliUsername = anevzatcelik@gmail.com
     //qdGecerliPassword = Nevzat152032
 
-    @Test
+    @Test (groups = "smoke")
     public void test01(){
 
         Driver.getDriver().get("https://www.qualitydemy.com/");
-
+        Driver.getDriver().findElement(By.xpath("//a[@onclick='cookieAccept();']")).click();
         qualitydemyPage qualitydemyPage=new qualitydemyPage();
 
         qualitydemyPage.logInKutusu.click();

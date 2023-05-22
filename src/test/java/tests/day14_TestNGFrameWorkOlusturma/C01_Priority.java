@@ -12,7 +12,7 @@ public class C01_Priority {
   priority sayisal olarak kucukten buyuge dogru testleri calistirir
   eger priority degeri ayni olan birden fazla test varsa, yine harf sirasina bakar
     */
-    @Test(priority = 57)
+    @Test(groups = "minireg1")
     public void youtubeTesti(){
         System.out.println("Youtube");
     }
@@ -20,7 +20,7 @@ public class C01_Priority {
     public void wiseTesti(){
         System.out.println("Wisequarter");
     }
-    @Test        //default priority =0 degeri alir.
+    @Test (groups = {"smoke","minireg1"})       //default priority =0 degeri alir.
     public void amazonTesti(){
         System.out.println("Amazon");
     }
